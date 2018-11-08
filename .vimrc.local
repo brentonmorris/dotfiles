@@ -1,0 +1,25 @@
+Plugin 'dracula/vim'
+Plugin 'mhartington/oceanic-next'
+
+Plugin 'othree/yajs'
+Plugin 'jelera/vim-javascript-syntax'
+Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'tpope/vim-fireplace'
+
+syntax enable
+" colorscheme solarized
+colorscheme OceanicNext
+
+autocmd BufNewFile,BufRead *.php set tabstop=4
+autocmd BufNewFile,BufRead *.php set shiftwidth=4
+
+autocmd BufNewFile,BufRead *.py set tabstop=4
+autocmd BufNewFile,BufRead *.py set shiftwidth=4
+
+if has("clipboard")
+  set clipboard=unnamed " copy to the system clipboard
+
+  if has("unnamedplus") " X11 support
+    set clipboard+=unnamedplus
+  endif
+endif
