@@ -1,10 +1,15 @@
-Plugin 'dracula/vim'
+" Plugin 'chemzqm/vim-jsx-improve'
+" Plugin 'dracula/vim'
+" Plugin 'jason0x43/vim-js-indent'
+" Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mhartington/oceanic-next'
-
-Plugin 'othree/yajs'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'chemzqm/vim-jsx-improve'
-Plugin 'tpope/vim-fireplace'
+" Plugin 'mhartington/vim-typings'
+" Plugin 'othree/yajs'
+" Plugin 'Quramy/tsuquyomi'
+" Plugin 'Quramy/vim-js-pretty-template'
+" Plugin 'Quramy/vim-dtsm'
+" Plugin 'tpope/vim-fireplace'
+" Plugin 'Galooshi/vim-import-js'
 
 syntax enable
 " colorscheme solarized
@@ -23,3 +28,5 @@ if has("clipboard")
     set clipboard+=unnamedplus
   endif
 endif
+
+autocmd FileType typescript setlocal completeopt+=menu,preview
