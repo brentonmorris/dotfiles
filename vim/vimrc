@@ -1,0 +1,76 @@
+" ----------
+" Vim Config
+" ----------
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+" Colorschemes
+Plugin 'tpope/vim-vividchalk'
+Plugin 'chriskempson/base16-vim'
+Plugin 'mhartington/oceanic-next'
+Plugin 'molokai'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'wgibbs/vim-irblack'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'candycode.vim'
+Plugin 'Colour-Sampler-Pack'
+Plugin 'flazz/vim-colorschemes'
+
+" Ruby
+Plugin 'tpope/vim-endwise'
+
+" General Editing
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'camelcasemotion'
+
+" Searching
+Plugin 'epmatsw/ag.vim'
+Plugin 'henrik/vim-qargs'
+Plugin 'ctrlpvim/ctrlp.vim'
+
+
+" Navigation
+Plugin 'scrooloose/nerdtree'
+
+
+" Languages
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'pangloss/vim-javascript'
+Plugin 'nono/vim-handlebars'
+Plugin 'juvenn/mustache.vim'
+Plugin 'fatih/vim-go'
+Plugin 'rosstimson/scala-vim-support'
+Plugin 'guns/vim-clojure-static'
+Plugin 'briancollins/vim-jst'
+Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'lambdatoast/elm.vim'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'mhartington/vim-typings'
+Plugin 'digitaltoad/vim-pug'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'luan/vim-concourse'
+
+" Development Tool Integration
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
+
+call vundle#end()
+
+filetype plugin indent on
+
+syntax on
+
+runtime! init/**.vim
+
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
