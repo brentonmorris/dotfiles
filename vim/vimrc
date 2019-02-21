@@ -33,14 +33,12 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'camelcasemotion'
 
 " Searching
-Plugin 'epmatsw/ag.vim'
+Plugin 'mileszs/ack.vim'
 Plugin 'henrik/vim-qargs'
 Plugin 'ctrlpvim/ctrlp.vim'
 
-
 " Navigation
 Plugin 'scrooloose/nerdtree'
-
 
 " Languages
 Plugin 'vim-ruby/vim-ruby'
