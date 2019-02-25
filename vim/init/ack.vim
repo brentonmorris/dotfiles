@@ -13,3 +13,5 @@ function! AckVisual()
 endfunction
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+nnoremap <Leader>a :Ack!<Space>
