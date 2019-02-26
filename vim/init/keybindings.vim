@@ -43,28 +43,18 @@ map <leader>qc  :cclose<CR>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
+
 " Git blame
 map <leader>g   :Gblame<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
-
-" Copy current file path to system pasteboard
-map <silent> <D-C> :let @* = expand("%")<CR>:echo "Copied: ".expand("%")<CR>
-map <leader>C :let @* = expand("%").":".line(".")<CR>:echo "Copied: ".expand("%").":".line(".")<CR>
+map <D-/>       <plug>NERDCommenterToggle
+imap <D-/>      <Esc><plug>NERDCommenterToggle i
 
 " Easy access to the shell
 map <Leader><Leader> :!
-
-" Recalculate diff when it gets messed up.
-nmap du :diffupdate<CR>
-
-" ctrlp
-" <leader>f is the default trigger (set in init/ctrlp.vim)
-nnoremap <silent> <leader>F :CtrlPClearAllCaches<CR>:CtrlPCurWD<CR>
-
-" rebuild ctags
-map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Press Space to turn off highlighting and clear any message already
 " displayed.
