@@ -24,6 +24,9 @@ map <silent> <F7> gg=G`` :delmarks z<CR>:echo "Reformatted."<CR>
 " Fast scrolling
 nnoremap <C-e>  3<C-e>
 nnoremap <C-y>  3<C-y>
+"
+" In command-line mode, <C-A> should go to the front of the line, as in bash.
+cmap <C-A> <C-B>
 
 " File tree browser
 map \           :NERDTreeToggle<CR>
@@ -39,10 +42,17 @@ map <M-D-Up>    :cp<CR>
 map <leader>qo  :copen<CR>
 map <leader>qc  :cclose<CR>
 
-"indent/unindent visual mode selection with tab/shift+tab
+" indent/unindent visual mode selection with tab/shift+tab
 vmap <tab> >gv
 vmap <s-tab> <gv
 
+" AgGrep current word
+map <leader>a :call AgGrep()<CR>
+
+" AgVisual current selection
+vmap <leader>a :call AgVisual()<CR>
+
+" reindex ctags
 map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Git blame
