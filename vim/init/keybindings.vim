@@ -46,11 +46,11 @@ map <leader>qc  :cclose<CR>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-" AgGrep current word
-map <leader>a :call AgGrep()<CR>
+" AckGrep current word
+map <leader>a :call AckGrep()<CR>
 
-" AgVisual current selection
-vmap <leader>a :call AgVisual()<CR>
+" AckVisual current selection
+vmap <leader>a :call AckVisual()<CR>
 
 " reindex ctags
 map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>

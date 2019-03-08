@@ -1,15 +1,17 @@
 " Find current word in command mode
-function! AgGrep()
+function! AckGrep()
   let command = "ag ".expand("<cword>")
   cexpr system(command)
   cw
 endfunction
 
-function! AgVisual()
+function! AckVisual()
   normal gv"xy
   let command = "ag ".@x
   cexpr system(command)
   cw
 endfunction
 
-let g:agprg = 'ag --nogroup --nocolor --column'
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
