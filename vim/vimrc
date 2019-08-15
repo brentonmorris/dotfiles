@@ -9,28 +9,60 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Colorschemes
-Plugin 'tpope/vim-vividchalk'
+Plugin 'Colour-Sampler-Pack'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'candycode.vim'
 Plugin 'chriskempson/base16-vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'flazz/vim-colorschemes'
 Plugin 'mhartington/oceanic-next'
 Plugin 'molokai'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'tpope/vim-vividchalk'
 Plugin 'wgibbs/vim-irblack'
-Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'candycode.vim'
-Plugin 'Colour-Sampler-Pack'
-Plugin 'flazz/vim-colorschemes'
+
+" ******************* Syntax Highlighting *******************
+
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
+
+" Clojure
+Plugin 'guns/vim-clojure-static'
+
+" Go
+Plugin 'fatih/vim-go'
+
+" JavaScript
+Plugin 'Shougo/denite.nvim'
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'dense-analysis/ale'
+Plugin 'juvenn/mustache.vim'
+Plugin 'HerringtonDarkholme/yats.vim'
+Plugin 'leafgarland/typescript-vim'
+" Plugin 'mhartington/nvim-typescript'
+" Plugin 'Quramy/tsuquyomi'
+Plugin 'mxw/vim-jsx'
+Plugin 'nono/vim-handlebars'
+Plugin 'pangloss/vim-javascript'
+
+" Jinja2
+Plugin 'hiphish/jinja.vim'
 
 " Ruby
 Plugin 'tpope/vim-endwise'
+Plugin 'vim-ruby/vim-ruby'
+
+" Scala
+Plugin 'rosstimson/scala-vim-support'
 
 " General Editing
-Plugin 'tpope/vim-surround'
+Plugin 'camelcasemotion'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'tpope/vim-unimpaired'
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'camelcasemotion'
 
 " Searching
 Plugin 'mileszs/ack.vim'
@@ -40,26 +72,12 @@ Plugin 'ctrlpvim/ctrlp.vim'
 " Navigation
 Plugin 'scrooloose/nerdtree'
 
-" Languages
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'pangloss/vim-javascript'
-Plugin 'nono/vim-handlebars'
-Plugin 'juvenn/mustache.vim'
-Plugin 'fatih/vim-go'
-Plugin 'rosstimson/scala-vim-support'
-Plugin 'guns/vim-clojure-static'
-Plugin 'briancollins/vim-jst'
-Plugin 'chemzqm/vim-jsx-improve'
-Plugin 'lambdatoast/elm.vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'mhartington/vim-typings'
-Plugin 'digitaltoad/vim-pug'
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'luan/vim-concourse'
-
 " Development Tool Integration
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+
+" Enable deoplete at startup
+" let g:deoplete#enable_at_startup = 1
 
 call vundle#end()
 
