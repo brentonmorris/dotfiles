@@ -35,15 +35,14 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'fatih/vim-go'
 
 " JavaScript
-Plugin 'HerringtonDarkholme/yats.vim'
 Plugin 'chemzqm/vim-jsx-improve'
 Plugin 'juvenn/mustache.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
-Plugin 'mxw/vim-jsx'
 Plugin 'nono/vim-handlebars'
 Plugin 'pangloss/vim-javascript'
 
+" Plugin 'HerringtonDarkholme/yats.vim'
 " Plugin 'Quramy/tsuquyomi'
 " Plugin 'Shougo/denite.nvim'
 " Plugin 'Shougo/deoplete.nvim'
