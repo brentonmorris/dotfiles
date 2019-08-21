@@ -28,6 +28,9 @@ Plugin 'elixir-lang/vim-elixir'
 " Clojure
 Plugin 'guns/vim-clojure-static'
 
+" CoffeeScript
+Plugin 'kchmck/vim-coffee-script'
+
 " Go
 Plugin 'fatih/vim-go'
 
