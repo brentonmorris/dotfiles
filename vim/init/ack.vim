@@ -12,6 +12,6 @@ function! AckVisual()
   cw
 endfunction
 
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
+ if executable('ag')
+   let g:ackprg = 'ag --vimgrep'
+ endif

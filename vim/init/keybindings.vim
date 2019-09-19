@@ -5,7 +5,7 @@ let mapleader = ","
 let maplocalleader = ";"
 
 " Make Y consistent with D and C
-map Y           y$
+" map Y           y$
 
 " Search
 nmap <leader>s  :%s/
@@ -22,11 +22,11 @@ nmap <leader>=  gg=G``
 map <silent> <F7> gg=G`` :delmarks z<CR>:echo "Reformatted."<CR>
 
 " Fast scrolling
-nnoremap <C-e>  3<C-e>
-nnoremap <C-y>  3<C-y>
+"nnoremap <C-e>  3<C-e>
+"nnoremap <C-y>  3<C-y>
 "
 " In command-line mode, <C-A> should go to the front of the line, as in bash.
-cmap <C-A> <C-B>
+" cmap <C-A> <C-B>
 
 " File tree browser
 map \           :NERDTreeToggle<CR>
@@ -35,8 +35,8 @@ map \           :NERDTreeToggle<CR>
 map \|          :NERDTreeFind<CR>
 
 " Previous/next quickfix file listings (e.g. search results)
-map <M-D-Down>  :cn<CR>
-map <M-D-Up>    :cp<CR>
+ "map <M-D-Down>  :cn<CR>
+ "map <M-D-Up>    :cp<CR>
 
 " Open and close the quickfix window
 map <leader>qo  :copen<CR>
