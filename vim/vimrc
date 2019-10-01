@@ -74,7 +74,8 @@ Plugin 'henrik/vim-qargs'
 Plugin 'ctrlpvim/ctrlp.vim'
 
 " Navigation
-Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-vinegar'
+" Plugin 'scrooloose/nerdtree'
 
 " Development Tool Integration
 Plugin 'airblade/vim-gitgutter'
