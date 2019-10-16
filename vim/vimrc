@@ -50,7 +50,7 @@ Plugin 'pangloss/vim-javascript'
 " Plugin 'mhartington/nvim-typescript'
 
 " Jinja2
-Plugin 'hiphish/jinja.vim'
+Plugin 'Glench/Vim-Jinja2-Syntax'
 
 " Ruby
 Plugin 'tpope/vim-endwise'
