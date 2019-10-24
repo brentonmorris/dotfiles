@@ -21,7 +21,6 @@ Plugin 'tpope/vim-vividchalk'
 Plugin 'wgibbs/vim-irblack'
 
 " ******************* Syntax Highlighting *******************
-
 " Elixir
 Plugin 'elixir-lang/vim-elixir'
 
@@ -67,6 +66,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'tpope/vim-eunuch'
+Plugin 'mattn/emmet-vim'
 
 " Searching
 Plugin 'mileszs/ack.vim'
