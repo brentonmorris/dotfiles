@@ -66,7 +66,6 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-eunuch'
 Plugin 'mattn/emmet-vim'
 
 " Searching
@@ -76,6 +75,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 " Navigation
 Plugin 'tpope/vim-vinegar'
+Plugin 'tpope/vim-eunuch'
 " Plugin 'scrooloose/nerdtree'
 
 " Development Tool Integration
