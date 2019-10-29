@@ -29,11 +29,11 @@ map <silent> <F7> gg=G`` :delmarks z<CR>:echo "Reformatted."<CR>
 " cmap <C-A> <C-B>
 
 " File tree browser
-map \ :Vexplore<CR>
-"map \           :NERDTreeToggle<CR>
+"map \ :Vexplore<CR>
+map \           :NERDTreeToggle<CR>
 
 " File tree browser showing current file - pipe (shift-backslash)
-"map \|          :NERDTreeFind<CR>
+map \|          :NERDTreeFind<CR>
 
 " Previous/next quickfix file listings (e.g. search results)
  "map <M-D-Down>  :cn<CR>
