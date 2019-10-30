@@ -34,12 +34,13 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'fatih/vim-go'
 
 " JavaScript
-Plugin 'chemzqm/vim-jsx-improve'
+"Plugin 'chemzqm/vim-jsx-improve'
+Plugin 'peitalin/vim-jsx-typescript'
 Plugin 'juvenn/mustache.vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'nono/vim-handlebars'
-Plugin 'pangloss/vim-javascript'
+"Plugin 'pangloss/vim-javascript'
 
 " Plugin 'HerringtonDarkholme/yats.vim'
 " Plugin 'Quramy/tsuquyomi'
