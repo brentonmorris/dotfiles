@@ -42,6 +42,9 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'nono/vim-handlebars'
 Plugin 'pangloss/vim-javascript'
 
+" Python
+Plugin 'Vimjas/vim-python-pep8-indent'
+
 " Plugin 'HerringtonDarkholme/yats.vim'
 " Plugin 'Quramy/tsuquyomi'
 " Plugin 'Shougo/denite.nvim'
