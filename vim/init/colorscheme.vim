@@ -3,5 +3,5 @@ set background=dark
 
 let g:airline_powerline_fonts = 1
 
-silent! colorscheme OceanicNext
-silent! let g:airline_theme='dracula'
+silent! colorscheme deus
+silent! let g:airline_theme='deus'

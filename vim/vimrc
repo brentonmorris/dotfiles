@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Colorschemes
 Plugin 'Colour-Sampler-Pack'
+Plugin 'ajmwagar/vim-deus'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'candycode.vim'
 Plugin 'chriskempson/base16-vim'
