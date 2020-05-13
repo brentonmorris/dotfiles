@@ -44,6 +44,9 @@ Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'nono/vim-handlebars'
 Plugin 'pangloss/vim-javascript'
 
+" Jenkins
+Plugin 'martinda/Jenkinsfile-vim-syntax'
+
 " Python
 Plugin 'Vimjas/vim-python-pep8-indent'
 
