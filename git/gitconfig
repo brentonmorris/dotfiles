@@ -28,3 +28,6 @@
 [user]
   name = Brenton Morris
   email = brentonamorris@gmail.com
+
+[pager]
+  branch = false
