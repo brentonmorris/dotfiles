@@ -50,13 +50,6 @@ Plugin 'martinda/Jenkinsfile-vim-syntax'
 " Python
 Plugin 'Vimjas/vim-python-pep8-indent'
 
-" Plugin 'HerringtonDarkholme/yats.vim'
-" Plugin 'Quramy/tsuquyomi'
-" Plugin 'Shougo/denite.nvim'
-" Plugin 'Shougo/deoplete.nvim'
-" Plugin 'dense-analysis/ale'
-" Plugin 'mhartington/nvim-typescript'
-
 " Jinja2
 Plugin 'Glench/Vim-Jinja2-Syntax'
 
@@ -77,6 +70,9 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'mattn/emmet-vim'
 
+" Clipboard
+Plugin 'ojroques/vim-oscyank'
+
 " Searching
 Plugin 'mileszs/ack.vim'
 Plugin 'henrik/vim-qargs'
@@ -91,7 +87,6 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 
-" Enable deoplete at startup
 " let g:deoplete#enable_at_startup = 1
 
 call vundle#end()
