@@ -57,7 +57,7 @@ vmap <leader>a :call AckVisual()<CR>
 map <leader>rt :!~/.vim/bin/update_ctags 2>/dev/null &<CR>
 
 " Git blame
-map <leader>g   :Gblame<CR>
+map <leader>g   :Git blame<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
