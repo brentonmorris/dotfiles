@@ -1,0 +1,45 @@
+" First, install vim-plug
+" sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+"      https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+
+:set number
+" :set relativenumber
+:set autoindent
+:set tabstop=2
+:set shiftwidth=2
+:set smarttab
+:set softtabstop=2
+
+" Plugins will be downloaded under the specified directory.
+" call plug#begin(has('nvim') ? stdpath('data') . '/plugged' : '~/.vim/plugged')
+call plug#begin(stdpath('data') . '/plugged')
+" call plug#begin()
+
+" Declare the list of plugins.
+" Plug 'tpope/vim-sensible'
+Plug 'junegunn/seoul256.vim'
+Plug 'kyazdani42/nvim-tree.lua'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'neovim/nvim-lspconfig'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+lua << EOF
+require("nvim-tree").setup()
+EOF
+lua require('basic')
+
+" Unified color scheme (default: dark)
+colo seoul256
+
+" Light color scheme
+" colo seoul256-light
+
+" Switch
+" set background=dark
+" set background=light
+"
+" Keybindings
+" nvim-tree
+map \ :NvimTreeToggle<CR>
