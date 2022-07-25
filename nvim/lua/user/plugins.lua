@@ -55,6 +55,8 @@ return packer.startup(function(use)
   use { "tpope/vim-fugitive" }
   use { "akinsho/toggleterm.nvim" }
   use { "lukas-reineke/indent-blankline.nvim" }
+  use { 'tpope/vim-endwise' }
+  use { 'vim-ruby/vim-ruby' }
 
   -- Colorschemes
   use { "junegunn/seoul256.vim" }

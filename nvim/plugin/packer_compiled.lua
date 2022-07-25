@@ -194,6 +194,11 @@ _G.packer_plugins = {
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
+  ["vim-endwise"] = {
+    loaded = true,
+    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-endwise",
+    url = "https://github.com/tpope/vim-endwise"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -203,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-ruby"] = {
+    loaded = true,
+    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-ruby",
+    url = "https://github.com/vim-ruby/vim-ruby"
   }
 }
 
