@@ -179,6 +179,11 @@ _G.packer_plugins = {
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/seoul256.vim",
     url = "https://github.com/junegunn/seoul256.vim"
   },
+  ["telescope-fzf-native.nvim"] = {
+    loaded = true,
+    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
+    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/telescope.nvim",

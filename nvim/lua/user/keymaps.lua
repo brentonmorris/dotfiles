@@ -32,11 +32,11 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Clear highlights
-keymap("n", "<Space>", "<cmd>nohlsearch<CR>", opts)
-
 -- Close buffers
 keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
+
+-- Clear highlights
+keymap("n", "<Space>", "<cmd>nohlsearch<CR>", opts)
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
