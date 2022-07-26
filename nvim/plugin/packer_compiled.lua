@@ -99,10 +99,15 @@ _G.packer_plugins = {
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
-  cmp_luasnip = {
+  fzf = {
     loaded = true,
-    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
-    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/fzf",
+    url = "https://github.com/junegunn/fzf"
+  },
+  ["fzf.vim"] = {
+    loaded = true,
+    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/fzf.vim",
+    url = "https://github.com/junegunn/fzf.vim"
   },
   ["gitsigns.nvim"] = {
     loaded = true,
@@ -154,6 +159,11 @@ _G.packer_plugins = {
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-endwise"] = {
+    loaded = true,
+    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/nvim-treesitter-endwise",
+    url = "https://github.com/RRethy/nvim-treesitter-endwise"
+  },
   ["nvim-ts-context-commentstring"] = {
     loaded = true,
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
@@ -179,16 +189,6 @@ _G.packer_plugins = {
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/seoul256.vim",
     url = "https://github.com/junegunn/seoul256.vim"
   },
-  ["telescope-fzf-native.nvim"] = {
-    loaded = true,
-    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim",
-    url = "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
-  },
-  ["telescope.nvim"] = {
-    loaded = true,
-    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/telescope.nvim",
-    url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
   ["toggleterm.nvim"] = {
     loaded = true,
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
@@ -199,11 +199,6 @@ _G.packer_plugins = {
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
   },
-  ["vim-endwise"] = {
-    loaded = true,
-    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-endwise",
-    url = "https://github.com/tpope/vim-endwise"
-  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -213,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-illuminate",
     url = "https://github.com/RRethy/vim-illuminate"
+  },
+  ["vim-lsp"] = {
+    loaded = true,
+    path = "/Users/brenton/.local/share/nvim/site/pack/packer/start/vim-lsp",
+    url = "https://github.com/prabirshrestha/vim-lsp"
   },
   ["vim-ruby"] = {
     loaded = true,

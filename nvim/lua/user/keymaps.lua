@@ -56,14 +56,19 @@ keymap("v", ">", ">gv", opts)
 keymap("", "\\", ":NvimTreeToggle<CR>", { silent = true })
 keymap("", "|", ":NvimTreeFindFile<CR>", { silent = true })
 
+-- Split window
 keymap("n", "<leader>v", ":vsplit<CR>", opts)
 keymap("n", "<leader>h", ":sp<CR>", opts)
 
+-- fzf
+keymap("n", "<leader>f", ":Files<CR>", opts)
+keymap("n", "<leader>F", ":Rg<CR>", opts)
+
 -- Telescope
-keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
-keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
-keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
-keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
+-- keymap("n", "<leader>ff", ":Telescope find_files<CR>", opts)
+-- keymap("n", "<leader>ft", ":Telescope live_grep<CR>", opts)
+-- keymap("n", "<leader>fp", ":Telescope projects<CR>", opts)
+-- keymap("n", "<leader>fb", ":Telescope buffers<CR>", opts)
 
 -- fugitive.vim
 keymap("n", "<leader>b", ":Git blame<CR>", opts)

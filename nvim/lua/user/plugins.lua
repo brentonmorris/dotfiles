@@ -41,43 +41,42 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
 
-  -- My plugins here
-  use { "wbthomason/packer.nvim" } -- Have packer manage itself
-  use { "nvim-lua/plenary.nvim" } -- Useful lua functions used by lots of plugins
-  use { "windwp/nvim-autopairs" } -- Autopairs, integrates with both cmp and treesitter
-  use { "numToStr/Comment.nvim" }
+  use { "wbthomason/packer.nvim" }
+
   use { "JoosepAlviste/nvim-ts-context-commentstring" }
-  use { "kyazdani42/nvim-web-devicons" }
-  use { "kyazdani42/nvim-tree.lua" }
+  use { "RRethy/nvim-treesitter-endwise" }
   use { "akinsho/bufferline.nvim" }
+  use { "akinsho/toggleterm.nvim" }
+  use { "kyazdani42/nvim-tree.lua" }
+  use { "kyazdani42/nvim-web-devicons" }
+  use { "lukas-reineke/indent-blankline.nvim" }
   use { "moll/vim-bbye" }
+  use { "numToStr/Comment.nvim" }
+  use { "nvim-lua/plenary.nvim" }
   use { "nvim-lualine/lualine.nvim" }
   use { "tpope/vim-fugitive" }
-  use { "akinsho/toggleterm.nvim" }
-  use { "lukas-reineke/indent-blankline.nvim" }
-  use { 'tpope/vim-endwise' }
-  use { 'vim-ruby/vim-ruby' }
+  use { "vim-ruby/vim-ruby" }
+  use { "windwp/nvim-autopairs" }
 
   -- Colorschemes
   use { "junegunn/seoul256.vim" }
 
   -- cmp plugins
-  use { "hrsh7th/nvim-cmp" } -- The completion plugin
-  use { "hrsh7th/cmp-buffer"} -- buffer completions
-  use { "hrsh7th/cmp-path" } -- path completions
-  use { "saadparwaiz1/cmp_luasnip" } -- snippet completions
+  use { "hrsh7th/cmp-buffer"}
   use { "hrsh7th/cmp-nvim-lsp" }
   use { "hrsh7th/cmp-nvim-lua" }
+  use { "hrsh7th/cmp-path" }
+  use { "hrsh7th/nvim-cmp" }
 
   -- LSP
-  use { "neovim/nvim-lspconfig" } -- enable LSP
-  use { "williamboman/nvim-lsp-installer" } -- simple to use language server installer
-  use { "jose-elias-alvarez/null-ls.nvim" } -- for formatters and linters
   use { "RRethy/vim-illuminate" }
+  use { "jose-elias-alvarez/null-ls.nvim" }
+  use { "neovim/nvim-lspconfig" }
+  use { "prabirshrestha/vim-lsp" }
+  use { "williamboman/nvim-lsp-installer" }
 
-  -- Telescope
-  use { "nvim-telescope/telescope.nvim" }
-  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
+  use { "junegunn/fzf", {['do'] = vim.fn['fzf#install']} }
+  use { "junegunn/fzf.vim" }
 
   -- Treesitter
   use { "nvim-treesitter/nvim-treesitter" }
