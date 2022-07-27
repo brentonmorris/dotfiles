@@ -69,7 +69,6 @@ return packer.startup(function(use)
   use { "hrsh7th/nvim-cmp" }
 
   -- LSP
-  use { "RRethy/vim-illuminate" }
   use { "jose-elias-alvarez/null-ls.nvim" }
   use { "neovim/nvim-lspconfig" }
   use { "prabirshrestha/vim-lsp" }
