@@ -19,5 +19,5 @@ configs.setup({
 		-- disable = { "css" }, -- list of language that will be disabled
 	},
 	-- indent = { enable = true, disable = { "python", "css" } },
-	indent = { enable = true  },
+	-- indent = { enable = true  },
 })
