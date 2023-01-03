@@ -1,4 +1,8 @@
+-- Leader
+vim.g.mapleader = ','
+
 local keymap = vim.keymap
+local opts = { silent = true }
 
 -- Do nt yank with x
 keymap.set('n', 'x', '"_x')
@@ -7,18 +11,21 @@ keymap.set('n', 'x', '"_x')
 keymap.set('n', '+', '<C-a>')
 keymap.set('n', '-', '<C-x>')
 
+-- Clear highlighting
+keymap.set('n', '<Space>', '<cmd>nohlsearch<CR>', opts)
+
 -- Delete a word backwards
 -- keymap.set('n', 'dw', 'vb"_d')
 
 -- Select all
-keymap.set('n', '<C-a>', 'gg<S-v>G')
+-- keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
-keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
+keymap.set('n', 'te', ':tabedit<Return>', opts)
 
 -- Split window
-keymap.set('n', 'ss', ':split<Return><C-w>w', { silent = true })
-keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
+keymap.set('n', 'ss', ':split<Return><C-w>w', opts)
+keymap.set('n', 'sv', ':vsplit<Return><C-w>w', opts)
 
 -- Move window
 -- keymap.set('n', '<Space>', '<C-w>w')
@@ -33,7 +40,7 @@ keymap.set('n', 'sv', ':vsplit<Return><C-w>w', { silent = true })
 -- keymap.set('', 's<right>', '<C-w>l')
 
 -- Resize window
-keymap.set('n', '<C-w><left>', '<C-w><')
-keymap.set('n', '<C-w><right>', '<C-w>>')
-keymap.set('n', '<C-w><up>', '<C-w>+')
-keymap.set('n', '<C-w><down>', '<C-w>-')
+-- keymap.set('n', '<C-w><left>', '<C-w><')
+-- keymap.set('n', '<C-w><right>', '<C-w>>')
+-- keymap.set('n', '<C-w><up>', '<C-w>+')
+-- keymap.set('n', '<C-w><down>', '<C-w>-')

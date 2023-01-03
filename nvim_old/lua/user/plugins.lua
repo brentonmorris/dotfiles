@@ -16,7 +16,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
- vim.cmd [[
+vim.cmd [[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins.lua source <afile> | PackerSync
@@ -63,7 +63,7 @@ return packer.startup(function(use)
   use 'onsails/lspkind-nvim'
 
   use 'nvim-lualine/lualine.nvim'
-  use 'kyazdani42/nvim-web-devicons' 
+  use 'kyazdani42/nvim-web-devicons'
 
   -- use 'kyazdani42/nvim-tree.lua'
   use {

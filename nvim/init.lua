@@ -1,4 +1,6 @@
 require('base')
+require('colorscheme')
+require('endwise')
 require('highlights')
 require('maps')
 require('plugins')

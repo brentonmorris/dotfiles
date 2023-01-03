@@ -13,12 +13,14 @@ packer.startup(function(use)
   }
 
   use 'L3MON4D3/LuaSnip'
+  use 'RRethy/nvim-treesitter-endwise'
   use 'akinsho/nvim-bufferline.lua' -- tabs
   use 'dinhhuy258/git.nvim' -- For git blame & browse
   use 'glepnir/lspsaga.nvim' -- LSP UIs
   use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
   use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
   use 'hrsh7th/nvim-cmp' -- Completion
+  use 'junegunn/seoul256.vim' -- colorscheme
   use 'kyazdani42/nvim-web-devicons' -- File icons
   use 'lewis6991/gitsigns.nvim'
   use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
