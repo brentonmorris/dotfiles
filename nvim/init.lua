@@ -2,7 +2,7 @@ require('base')
 require('colorscheme')
 require('endwise')
 require('highlights')
-require('maps')
+require('keymaps')
 require('plugins')
 
 local has = function(x)

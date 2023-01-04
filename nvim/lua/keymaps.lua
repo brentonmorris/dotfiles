@@ -14,6 +14,10 @@ keymap.set('n', '-', '<C-x>')
 -- Clear highlighting
 keymap.set('n', '<Space>', '<cmd>nohlsearch<CR>', opts)
 
+-- vim-fugitive
+keymap.set('n', '<leader>gb', ':Git blame<CR>', opts)
+keymap.set('n', '<leader>go', ':GitBrowse<CR>', opts)
+
 -- Delete a word backwards
 -- keymap.set('n', 'dw', 'vb"_d')
 

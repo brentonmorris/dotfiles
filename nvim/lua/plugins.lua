@@ -26,6 +26,7 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'onsails/lspkind-nvim'
   use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
   use 'tpope/vim-surround'
   use 'williamboman/mason-lspconfig.nvim'
   use 'williamboman/mason.nvim'
