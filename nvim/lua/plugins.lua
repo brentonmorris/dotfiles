@@ -11,6 +11,7 @@ packer.startup(function(use)
   use 'L3MON4D3/LuaSnip'
   use 'RRethy/nvim-treesitter-endwise'
   use 'akinsho/nvim-bufferline.lua'
+  use 'github/copilot.vim'
   use 'glepnir/lspsaga.nvim'
   use 'godlygeek/tabular'
   use 'hrsh7th/cmp-buffer'

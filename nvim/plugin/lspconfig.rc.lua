@@ -140,6 +140,19 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   }
 )
 
+require 'lspconfig'.pylsp.setup {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = { 'W391' },
+          maxLineLength = 100
+        }
+      }
+    }
+  }
+}
+
 -- Diagnostic symbols in the sign column (gutter)
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
