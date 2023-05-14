@@ -28,7 +28,7 @@ keymap.set('n', '<leader>go', ':GitBrowse<CR>', opts)
 keymap.set('n', 'te', ':tabedit<Return>', opts)
 
 -- Split window
-keymap.set('n', 'ss', ':split<Return><C-w>w', opts)
+-- keymap.set('n', 'ss', ':split<Return><C-w>w', opts)
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w', opts)
 
 -- Move window
