@@ -131,6 +131,32 @@ nvim_lsp.eslint.setup {
   capabilities = capabilities
 }
 
+-- nvim_lsp.pyright.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities
+-- }
+
+nvim_lsp.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  single_file_support = true,
+  settings = {
+    pyright = {
+      disableLanguageServices = false,
+      disableOrganizeImports = false
+    },
+    python = {
+      analysis = {
+        autoImportCompletions = true,
+        autoSearchPaths = true,
+        diagnosticMode = "workspace", -- openFilesOnly, workspace
+        typeCheckingMode = "basic",   -- off, basic, strict
+        useLibraryCodeForTypes = true
+      }
+    }
+  }
+}
+
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
     underline = true,
@@ -139,20 +165,7 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
     severity_sort = true,
   }
 )
-
-require 'lspconfig'.pylsp.setup {
-  settings = {
-    pylsp = {
-      plugins = {
-        pycodestyle = {
-          ignore = { 'W391' },
-          maxLineLength = 100
-        }
-      }
-    }
-  }
-}
-
+--
 -- Diagnostic symbols in the sign column (gutter)
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
 for type, icon in pairs(signs) do
