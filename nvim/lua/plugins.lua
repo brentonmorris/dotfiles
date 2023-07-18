@@ -12,7 +12,7 @@ packer.startup(function(use)
   use 'RRethy/nvim-treesitter-endwise'
   use 'akinsho/nvim-bufferline.lua'
   use 'github/copilot.vim'
-  use 'glepnir/lspsaga.nvim'
+  use 'nvimdev/lspsaga.nvim'
   use 'godlygeek/tabular'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-nvim-lsp'
