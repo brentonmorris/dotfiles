@@ -28,9 +28,9 @@ vim.opt.backspace = 'start,eol,indent'
 vim.opt.path:append { '**' } -- Finding files - search subfolders'
 vim.opt.wildignore:append { '*/node_modules/*' }
 
--- Undercurl - Figure out what this does
--- vim.cmd([[let &t_Cs = "\e[4:3m"]])
--- vim.cmd([[let &t_Ce = "\e[4:0m"]])
+-- Undercurl
+vim.cmd([[let &t_Cs = "\e[4:3m"]])
+vim.cmd([[let &t_Ce = "\e[4:0m"]])
 -- Not working on iTerm2 yet?
 
 --- Turn off paste mode when leaving insert
