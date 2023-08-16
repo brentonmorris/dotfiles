@@ -115,6 +115,13 @@ lspconfig.pyright.setup {
   filetypes = { "python" }
 }
 
+
+lspconfig.ruby_ls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "ruby" },
+}
+
 -- local ruff_on_attach = function(client, bufnr)
 --   -- Disable hover in favor of Pyright
 --   client.server_capabilities.hoverProvider = false
@@ -132,16 +139,16 @@ lspconfig.pyright.setup {
 --     }
 --   }
 -- }
--- lspconfig.tailwindcss.setup {
---   on_attach = on_attach,
---   capabilities = capabilities
--- }
---
--- lspconfig.cssls.setup {
---   on_attach = on_attach,
---   capabilities = capabilities
--- }
---
+lspconfig.tailwindcss.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
+lspconfig.cssls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities
+}
+
 -- lspconfig.astro.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities

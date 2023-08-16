@@ -17,6 +17,9 @@ packer.startup(function(use)
   use "wbthomason/packer.nvim"
 
   use "nvim-lua/plenary.nvim"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
+  use "neovim/nvim-lspconfig"
   use "BurntSushi/ripgrep"
   use "onsails/lspkind-nvim"
   use 'nvim-tree/nvim-web-devicons'
@@ -26,9 +29,9 @@ packer.startup(function(use)
   use "hrsh7th/nvim-cmp"
   use "hrsh7th/cmp-buffer"
   use "hrsh7th/cmp-nvim-lsp"
+  use "github/copilot.vim"
   -- use "hrsh7th/cmp-cmdline"
   -- use "hrsh7th/cmp-path"
-  use "neovim/nvim-lspconfig"
   use "nvimdev/lspsaga.nvim"
   use {
     'nvim-treesitter/nvim-treesitter',
