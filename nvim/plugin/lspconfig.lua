@@ -82,6 +82,8 @@ lspconfig.tsserver.setup {
   capabilities = capabilities
 }
 
+lspconfig.clangd.setup {}
+
 -- lspconfig.sourcekit.setup {
 --   on_attach = on_attach,
 --   capabilities = capabilities,
