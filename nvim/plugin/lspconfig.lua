@@ -82,7 +82,20 @@ lspconfig.tsserver.setup {
   capabilities = capabilities
 }
 
-lspconfig.clangd.setup {}
+lspconfig.ccls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "c", "cpp", "hpp", "objc", "objcpp" },
+  init_options = {
+    compilationDatabaseDirectory = "build",
+    index = {
+      threads = 0,
+    },
+    clang = {
+      excludeArgs = { "-frounding-math" },
+    },
+  }
+}
 
 -- lspconfig.sourcekit.setup {
 --   on_attach = on_attach,
