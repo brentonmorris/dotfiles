@@ -34,9 +34,9 @@ local on_attach = function(client, bufnr)
   -- See `:help vim.lsp.*` for documentation on any of the below functions
   -- This is already bound to <C-]>
   buf_set_keymap("n", "gD", "<Cmd>lua vim.lsp.buf.declaration()<CR>", opts)
-  --buf_set_keymap("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
+  buf_set_keymap("n", "gd", "<Cmd>lua vim.lsp.buf.definition()<CR>", opts)
   buf_set_keymap("n", "gi", "<cmd>lua vim.lsp.buf.implementation()<CR>", opts)
-  --buf_set_keymap("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", opts)
+  buf_set_keymap("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", opts)
 end
 
 protocol.CompletionItemKind = {
@@ -130,12 +130,17 @@ lspconfig.pyright.setup {
   filetypes = { "python" }
 }
 
-
-lspconfig.ruby_ls.setup {
+lspconfig.solargraph.setup {
   on_attach = on_attach,
   capabilities = capabilities,
-  filetypes = { "ruby" },
+  filetypes = { "ruby" }
 }
+
+-- lspconfig.ruby_ls.setup {
+--   on_attach = on_attach,
+--   capabilities = capabilities,
+--   filetypes = { "ruby" },
+-- }
 
 -- local ruff_on_attach = function(client, bufnr)
 --   -- Disable hover in favor of Pyright
