@@ -1,58 +1,53 @@
-local status, packer = pcall(require, "packer")
-
-if (not status) then
-  print("Packer is not installed")
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
+vim.opt.rtp:prepend(lazypath)
 
--- Have packer use a popup window
-packer.init {
-  display = {
-    open_fn = function()
-      return require("packer.util").float { border = "rounded" }
-    end,
-  },
-}
-
-packer.startup(function(use)
-  use "wbthomason/packer.nvim"
-
-  use "nvim-lua/plenary.nvim"
-  use "neovim/nvim-lspconfig"
-  use "BurntSushi/ripgrep"
-  use "onsails/lspkind-nvim"
-  use 'nvim-tree/nvim-web-devicons'
-  use "windwp/nvim-autopairs"
-  use "tpope/vim-commentary"
-  use "L3MON4D3/LuaSnip"
-  use "hrsh7th/nvim-cmp"
-  use "hrsh7th/cmp-buffer"
-  use "hrsh7th/cmp-nvim-lsp"
-  use "github/copilot.vim"
-  -- use "hrsh7th/cmp-cmdline"
-  -- use "hrsh7th/cmp-path"
-  use "nvimdev/lspsaga.nvim"
-  use {
+require('lazy').setup({
+  "nvim-lua/plenary.nvim",
+  "neovim/nvim-lspconfig",
+  "BurntSushi/ripgrep",
+  "onsails/lspkind-nvim",
+  "nvim-tree/nvim-web-devicons",
+  "windwp/nvim-autopairs",
+  "tpope/vim-commentary",
+  "L3MON4D3/LuaSnip",
+  "hrsh7th/nvim-cmp",
+  "hrsh7th/cmp-buffer",
+  "hrsh7th/cmp-nvim-lsp",
+  "github/copilot.vim",
+  -- "hrsh7th/cmp-cmdline",
+  -- "hrsh7th/cmp-path",
+  "nvimdev/lspsaga.nvim",
+  {
     'nvim-treesitter/nvim-treesitter',
-    run = function()
+    build = function()
       local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
       ts_update()
     end
-  }
-  use {
+  },
+  {
     "nvim-telescope/telescope.nvim",
-    requires = { { "nvim-lua/plenary.nvim" } }
-  }
-  use {
+    dependencies = { { "nvim-lua/plenary.nvim" } }
+  },
+  {
     "nvim-telescope/telescope-file-browser.nvim",
-    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
-  }
-  use {
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  },
+  {
     "nvim-lualine/lualine.nvim",
-    requires = { "nvim-tree/nvim-web-devicons", opt = true }
-  }
-  use "dinhhuy258/git.nvim"
-  use "lewis6991/gitsigns.nvim"
-
-  use "norcalli/nvim-colorizer.lua"
-  use { "catppuccin/nvim", as = "catppuccin" }
-end)
+    dependencies = { "nvim-tree/nvim-web-devicons", opt = true }
+  },
+  "dinhhuy258/git.nvim",
+  "lewis6991/gitsigns.nvim",
+  "norcalli/nvim-colorizer.lua",
+  { "catppuccin/nvim", as = "catppuccin" },
+})
