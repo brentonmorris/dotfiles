@@ -44,8 +44,11 @@ telescope.load_extension("file_browser")
 
 vim.keymap.set("n", ";f", function()
   builtin.find_files({
-    no_ignore = false,
-    hidden = true
+    -- no_ignore = false,
+    -- hidden = true
+    -- find_command = { "fd", "-t=f", "-a" },
+    path_display = { "absolute" },
+    wrap_results = true
   })
 end)
 

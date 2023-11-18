@@ -35,7 +35,7 @@ require('lazy').setup({
     end
   },
   {
-    "nvim-telescope/telescope.nvim",
+    "nvim-elescope/telescope.nvim",
     dependencies = { { "nvim-lua/plenary.nvim" } }
   },
   {
