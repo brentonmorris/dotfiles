@@ -19,7 +19,7 @@ require('lazy').setup({
   "nvim-tree/nvim-web-devicons",
   "windwp/nvim-autopairs",
   "tpope/vim-commentary",
-  "L3MON4D3/LuaSnip",
+  -- "L3MON4D3/LuaSnip",
   "hrsh7th/nvim-cmp",
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-nvim-lsp",
