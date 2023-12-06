@@ -82,6 +82,13 @@ lspconfig.tsserver.setup {
   capabilities = capabilities
 }
 
+lspconfig.terraformls.setup {
+  on_attach = on_attach,
+  filetypes = { "tf", "hcl", "tfvars" },
+  cmd = { "typescript-language-server", "--stdio" },
+  capabilities = capabilities
+}
+
 lspconfig.ccls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
