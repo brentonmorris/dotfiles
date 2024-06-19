@@ -7,13 +7,14 @@ return {
       auto_install = true,
       ensure_installed = {
         "c",
+        "html",
+        "javascript",
         "lua",
+        "python",
+        "query",
+        "ruby",
         "vim",
         "vimdoc",
-        "query",
-        "javascript",
-        "ruby",
-        "python"
       },
       highlight = {
         enable = true,
