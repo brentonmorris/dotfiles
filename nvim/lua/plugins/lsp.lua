@@ -13,6 +13,7 @@ return {
           "lua_ls",
           "solargraph",
           "tsserver",
+          "pyright",
         }
       })
     end
@@ -34,6 +35,10 @@ return {
       })
 
       lspconfig.tsserver.setup({
+        capabilities = capabilities,
+      })
+
+      lspconfig.pyright.setup({
         capabilities = capabilities,
       })
 
